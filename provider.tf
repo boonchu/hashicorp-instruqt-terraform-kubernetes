@@ -1,7 +1,7 @@
 terraform {
   required_version = "~> 0.13"
   required_providers {
-    mycloud = {
+    kubernetes = {
       source  = "hashicorp/kubernetes"
       version = "~> 1.13"
     }
