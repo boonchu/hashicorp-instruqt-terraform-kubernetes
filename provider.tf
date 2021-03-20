@@ -6,8 +6,13 @@ terraform {
       version = "~> 1.13"
     }
   }
+
+  backend "local" {
+    path = "/tmp/terraform.tfstate"
+  }
+  
 }
 
 provider "kubernetes" {
-  host = "https://kubernetes:6443"
+  host = "https://kubernetes.docker.internal:6443"
 }
